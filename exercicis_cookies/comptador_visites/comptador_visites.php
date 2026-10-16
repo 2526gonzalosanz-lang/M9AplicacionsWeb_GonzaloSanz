@@ -37,6 +37,13 @@ $missatgeCompra = "";
 // Comprobamos si el formulario se ha enviado mediante POST.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+        // Aquí procesas la compra...
+
+    // Reiniciamos el contador de visitas a 1.
+    $visites = 1;
+    setcookie("visites", $visites, time() + 2592000, "/");
+    //reiniciamos el contador de visitas después de hacer la compra.
+
     // Recogemos el código introducido en el formulario.
     // trim elimina posibles espacios al principio o al final.
     $codi = trim($_POST["codi_descompte"] ?? "");
