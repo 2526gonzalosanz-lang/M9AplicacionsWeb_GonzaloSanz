@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!-- Indiquem que l'idioma de la pàgina és català. -->
+<html lang="ca">
+
+<head>
+
+    <!-- Definim la codificació UTF-8 per mostrar correctament accents i caràcters especials. -->
+    <meta charset="UTF-8">
+
+    <!-- Títol que apareix a la pestanya del navegador. -->
+    <title>Login</title>
+
+</head>
+
+<body>
+
+    <!-- Títol principal de la pàgina. -->
+    <h1>Iniciar sessió</h1>
+
+    <!--
+    Creem el formulari de login.
+    action indica que les dades s'enviaran al fitxer login.php.
+    method POST permet enviar les dades sense mostrar-les a la URL.
+    -->
+    <form action="login.php" method="POST">
+
+        <!-- Etiqueta associada al camp d'usuari. -->
+        <label for="usuari">Usuari:</label>
+
+        <!--
+        Camp de text per introduir el nom d'usuari.
+        required obliga a omplir el camp.
+        maxlength limita la longitud màxima.
+        -->
+        <input
+            type="text"
+            id="usuari"
+            name="usuari"
+            maxlength="30"
+            required
+        >
+
+        <br><br>
+
+        <!-- Etiqueta associada al camp de contrasenya. -->
+        <label for="password">Contrasenya:</label>
+
+        <!--
+        Camp de tipus password perquè el text introduït quedi ocult.
+        required obliga a introduir una contrasenya.
+        maxlength limita la longitud màxima.
+        -->
+        <input
+            type="password"
+            id="password"
+            name="password"
+            maxlength="30"
+            required
+        >
+
+        <br><br>
+
+        <!-- Botó que envia el formulari. -->
+        <button type="submit">Entrar</button>
+
+    </form>
+
+</body>
+
+</html>
