@@ -9,9 +9,7 @@ unset($_SESSION["cistella"]);
 
 ?>
 
-<!DOCTYPE html>
-
-<html lang="ca">
+<html>
 
 <head>
 

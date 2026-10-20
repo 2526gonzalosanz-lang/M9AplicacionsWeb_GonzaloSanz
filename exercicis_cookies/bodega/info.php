@@ -139,9 +139,7 @@ if ($majoredat == "no") {
 
 ?>
 
-<!DOCTYPE html>
-
-<html lang="ca">
+<html>
 
 <head>
 

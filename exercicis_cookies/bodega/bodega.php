@@ -54,10 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
-<!DOCTYPE html>
-
-<!-- Indiquem que la pàgina està escrita en català. -->
-<html lang="ca">
+<html>
 
 <head>
 

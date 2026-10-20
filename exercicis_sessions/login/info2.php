@@ -17,10 +17,7 @@ if (!isset($_SESSION["usuari"])) {
 
 ?>
 
-<!DOCTYPE html>
-
-<!-- Indiquem que la pàgina està escrita en català. -->
-<html lang="ca">
+<html>
 
 <head>
 

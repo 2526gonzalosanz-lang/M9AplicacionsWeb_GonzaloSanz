@@ -23,9 +23,7 @@ $total = 0;
 
 ?>
 
-<!DOCTYPE html>
-
-<html lang="ca">
+<html>
 
 <head>
 
