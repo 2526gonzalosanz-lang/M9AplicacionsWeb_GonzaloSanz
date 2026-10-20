@@ -92,7 +92,7 @@ $total = 0;
         Creem un formulari que ens permet confirmar la compra.
         Quan es premi el botó anirem a confirmar.php.
         -->
-        <form action="confirmar.php" method="POST">
+        <form action="confirmar_compra.php" method="POST">
 
             <!-- Botó que simula el pagament. -->
             <button type="submit">Confirmar compra</button>
