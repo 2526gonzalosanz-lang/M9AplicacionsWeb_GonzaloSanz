@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!-- Indiquem que la pàgina està escrita en català. -->
+<html lang="ca">
+
+<head>
+
+    <!-- Definim la codificació UTF-8. -->
+    <meta charset="UTF-8">
+
+    <!-- Títol que apareix a la pestanya del navegador. -->
+    <title>Cistella de compra</title>
+
+</head>
+
+<body>
+
+    <!-- Títol principal de la botiga. -->
+    <h1>Botiga online</h1>
+
+
+    <!-- Mostrem el primer producte. -->
+    <h2>Samarreta</h2>
+
+    <!-- Mostrem el preu del producte. -->
+    <p>Preu: 20 €</p>
+
+    <!--
+    Creem un formulari per afegir la samarreta.
+    Les dades s'enviaran a cistella_compra.php mitjançant POST.
+    -->
+    <form action="cistella_compra.php" method="POST">
+
+        <!--
+        Camp ocult que indica quin producte estem afegint.
+        L'usuari no veu aquest camp.
+        -->
+        <input type="hidden" name="producte" value="samarreta">
+
+        <!-- Etiqueta del camp quantitat. -->
+        <label for="quantitat_samarreta">Quantitat:</label>
+
+        <!--
+        Camp numèric per indicar la quantitat.
+        min="1" impedeix seleccionar valors inferiors a 1.
+        step="1" només permet nombres enters.
+        required obliga a introduir una quantitat.
+        -->
+        <input
+            type="number"
+            id="quantitat_samarreta"
+            name="quantitat"
+            min="1"
+            step="1"
+            required
+        >
+
+        <!-- Botó per afegir el producte a la cistella. -->
+        <button type="submit">Afegir a la cistella</button>
+
+    </form>
+
+
+    <hr>
+
+
+    <!-- Mostrem el segon producte. -->
+    <h2>Pantalons</h2>
+
+    <!-- Mostrem el seu preu. -->
+    <p>Preu: 35 €</p>
+
+    <!-- Formulari del segon producte. -->
+    <form action="cistella_compra.php" method="POST">
+
+        <!-- Indiquem que aquest formulari correspon als pantalons. -->
+        <input type="hidden" name="producte" value="pantalons">
+
+        <!-- Etiqueta del camp quantitat. -->
+        <label for="quantitat_pantalons">Quantitat:</label>
+
+        <!-- Camp per indicar quants pantalons volem comprar. -->
+        <input
+            type="number"
+            id="quantitat_pantalons"
+            name="quantitat"
+            min="1"
+            step="1"
+            required
+        >
+
+        <!-- Botó per afegir els pantalons a la cistella. -->
+        <button type="submit">Afegir a la cistella</button>
+
+    </form>
+
+
+    <br><br>
+
+
+    <!--
+    Enllaç que permet finalitzar la compra
+    i consultar el resum de la cistella.
+    -->
+    <a href="resum.php">Finalitzar compra</a>
+
+</body>
+
+</html>
